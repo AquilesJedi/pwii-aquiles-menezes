@@ -17,7 +17,11 @@ echo "<br>";
 echo $y[1];
 echo "<br>";
 
-$meuObj -> nome : "Davi";
-$meuObj -> idade : 42;
- 
+$meuObj = new stdClass();
+$meuObj->nome = "Davi";
+$meuObj->idade = 32;
+$meuJson = json_encode($meuObj);
+echo $meuJson;
+echo "<br>";
+var_dump($meuJson)
 ?>
