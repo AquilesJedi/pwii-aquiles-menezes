@@ -1,6 +1,6 @@
 <html>
     <body>
-        <form action="ex3-pt2.php" method="post">
+        <form action="ex3-pt2.php" method="get">
         <label for="base">qual a base?</label> <br>
         <input type="number" name="base" id="base">
         <label for="altura">qual a altura?</label> <br>
