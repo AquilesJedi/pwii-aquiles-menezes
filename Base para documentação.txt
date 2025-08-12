@@ -1,0 +1,8 @@
+Instalar as dependências do Laravel
+duplicar o arquivo .env.example e o arquivo escrito como .env copy.example, mude para apenas .env
+executar o comando "Composer Install" no terminal Windows que foi aberto na pasta do projeto, isso ira baixar os pré requisitos para o PHP
+é necessário ter Composer baixado
+use o comando "npm install" para baixar as dependências node
+utilizar o comando "php artisan key:generate" irá gerar a chave de criptografia para o arquivo .env
+rodar o "php artisan migrate" para criar um banco de dados, e após isso usar "composer run dev"
+utilizar o site do laravel na documentação para melhorar o documento
