@@ -138,27 +138,6 @@ php artisan migrate
 
 ----------
 
-## **4. Ferramentas de Desenvolvimento — Laravel Herd**
-
-O **Laravel Herd** é um ambiente pré-configurado com PHP, Nginx, Node, Composer e Laravel CLI, disponível para **macOS** e **Windows**.
-
--   **macOS**: diretório padrão `~/Herd` acessível via domínio `.test`.
-    
--   **Windows**: diretório `%USERPROFILE%\Herd`.
-    
-
-Criando app com Herd:
-
-```bash
-cd Herd
-laravel new my-app
-herd open
-
-```
-
-----------
-
-## **5. Gerenciando Configurações**
 
 ### 📌 Comandos úteis:
 
@@ -192,57 +171,8 @@ php artisan config:show database
 
 ----------
 
-## **6. Acessando e Alterando Configs no Código**
 
--   Ler:
-    
-
-```php
-config('app.timezone');
-Config::get('app.timezone');
-
-```
-
--   Alterar:
-    
-
-```php
-config(['app.timezone' => 'America/Chicago']);
-Config::set('app.timezone', 'America/Chicago');
-
-```
-
--   Métodos tipados:
-    
-
-```php
-Config::string('config-key');
-Config::integer('config-key');
-Config::boolean('config-key');
-
-```
-
-----------
-
-## **7. Cache de Configuração**
-
-Para produção:
-
-```bash
-php artisan config:cache
-
-```
-
-Para limpar:
-
-```bash
-php artisan config:clear
-
-```
-
-----------
-
-## **8. Segurança — Criptografando `.env`**
+## **4. Segurança — Criptografando `.env`**
 
 -   Criptografar:
     
@@ -261,51 +191,11 @@ php artisan env:decrypt
 ```
 
 -   É possível usar `--key` para definir chave própria.
-    
 
+    
 ----------
 
-## **9. Modo de Depuração**
-
--   Controlado por `APP_DEBUG` no `.env`.
-    
--   Quando ativado, mostra detalhes completos de erros.
-    
-
-----------
-
-## **10. Modo de Manutenção**
-
-Ativar:
-
-```bash
-php artisan down
-
-```
-
-Desativar:
-
-```bash
-php artisan up
-
-```
-
-Opções:
-
--   `--refresh=15` → autoatualiza a cada 15s.
-    
--   `--retry=60` → define tempo de espera no header.
-    
--   `--secret="token"` → permite acesso com token especial.
-    
--   `--render="errors::503"` → view personalizada.
-    
--   `--redirect=/` → redireciona usuários para rota específica.
-    
-
-----------
-
-## **11. IDEs Recomendadas**
+## **5. IDEs Recomendadas**
 
 -   **VS Code** + extensão oficial Laravel
     
@@ -316,7 +206,7 @@ Opções:
 
 ----------
 
-## **12. Próximos Passos**
+## **6. Próximos Passos**
 
 -   Se usar Laravel como **full stack**: estudar Blade, Inertia, Livewire, Vite, roteamento e Eloquent ORM.
     
